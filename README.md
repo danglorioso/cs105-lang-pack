@@ -1,6 +1,15 @@
 # cs105-lang-pack README
 
-This is the README for your extension "cs105-lang-pack". After writing up a brief description, we recommend including the following sections.
+## Credits and Upstream Extensions
+
+This extension integrates or adapts syntax definitions from the following existing language extensions used in Tufts CS105:
+
+- **Impcore** – Uses Liam Strand’s extension: [liam-strand/105-vscode](https://github.com/liam-strand/105-vscode)
+- **Scheme / μScheme** – Uses: [tinyjiahao/vscode-scheme](https://github.com/tinyjiahao/vscode-scheme)
+- **Standard ML (Typed Impcore, μScheme, nanoML)** – Uses: [valcioffi/vscode-standard-ml](https://github.com/valcioffi/vscode-standard-ml)
+- **μSmalltalk** – Interpreted as Clojure due to similar syntax (uses built-in Clojure coloring in VSCode)
+
+All credit for language grammar definitions goes to the original authors. This extension re-uses and integrates them solely for educational use within the Tufts CS105 course.
 
 ## Features
 
