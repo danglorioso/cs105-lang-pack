@@ -1,0 +1,35 @@
+// Author: Valentino Cioffi
+// This grammar file for Impcore was adapted from the original extension
+// created by Valentino Cioffi: https://github.com/valcioffi/vscode-standard-ml
+// Credit and thanks to Valentino for developing the initial syntax highlighting support.
+
+{
+    "comments": {
+        "inlineComment" : "(*)",
+        "blockComment": [ "(*", "*)" ]
+    },
+    "brackets": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"]
+    ],
+    "autoClosingPairs": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["(*", "*)"]
+    ],
+    "surroundingPairs": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["\"", "\""],
+        ["(*", "*)"]
+    ],
+    "folding": {
+        "markers": {
+            "start": "\\(\\*|\\b(struct|sig|let)\\b",
+            "end": "\\*\\)|\\bend\\b"
+        }
+    }    
+}
