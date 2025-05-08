@@ -1,0 +1,31 @@
+{
+    "iconDefinitions": {
+      "icon-imp": { "iconPath": "./icons/impcore.svg" },
+      "icon-scm": { "iconPath": "./icons/scheme.svg" },
+      "icon-sml": { "iconPath": "./icons/sml.svg" },
+      "icon-nml": { "iconPath": "./icons/nml.svg" },
+      "icon-smt": { "iconPath": "./icons/smalltalk.svg" },
+      "icon-cq": { "iconPath": "./icons/cq.svg" }
+    },
+    "fileExtensions": {
+      "imp": "icon-imp",
+      "timp": "icon-imp",
+      "scm": "icon-scm",
+      "sml": "icon-sml",
+      "nml": "icon-nml",
+      "smt": "icon-smt"
+    },
+    "fileNames": {
+      "cqs-impcore.txt": "icon-cq",
+      "cqs-opsem.txt": "icon-cq",
+      "cqs-scheme.txt": "icon-cq",
+      "cqs-hofs.txt": "icon-cq",
+      "cqs-continuations.txt": "icon-cq",
+      "cqs-ml.txt": "icon-cq",
+      "cqs-typesys.txt": "icon-cq",
+      "cqs-inference.txt": "icon-cq",
+      "cqs-modules.txt": "icon-cq",
+      "cqs-small.txt": "icon-cq"
+    }
+  }
+  

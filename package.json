@@ -1,24 +1,79 @@
 {
   "name": "cs105-lang-pack",
-  "displayName": "cs105-lang-pack",
+  "displayName": "CS105 Language Pack",
   "description": "Syntax highlighting and custom file icons for Tufts' CS105 Programming Languages.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.99.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages",
+    "Themes"
+  ],
+  "extensionDependencies": [
+    "liamstrand.105-vscode",
+    "tinyjiahao.vscode-scheme",
+    "freebroccolo.sml"
   ],
   "activationEvents": [],
-  "main": "./out/extension.js",
   "contributes": {
-    "commands": [
+    "languages": [
       {
-        "command": "cs105-lang-pack.helloWorld",
-        "title": "Hello World"
+        "id": "impcore",
+        "aliases": ["Impcore"],
+        "extensions": [".imp", ".timp"],
+        "configuration": "./language-configuration/impcore.json"
+      },
+      {
+        "id": "scheme",
+        "aliases": ["Scheme"],
+        "extensions": [".scm"],
+        "configuration": "./language-configuration/scheme.json"
+      },
+      {
+        "id": "sml",
+        "aliases": ["Standard ML"],
+        "extensions": [".sml", ".nml"],
+        "configuration": "./language-configuration/sml.json"
+      },
+      {
+        "id": "usmalltalk",
+        "aliases": ["μSmalltalk"],
+        "extensions": [".smt"],
+        "configuration": "./language-configuration/smalltalk.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "impcore",
+        "scopeName": "source.impcore",
+        "path": "./syntaxes/impcore.tmLanguage.json"
+      },
+      {
+        "language": "scheme",
+        "scopeName": "source.scheme",
+        "path": "./syntaxes/scheme.tmLanguage.json"
+      },
+      {
+        "language": "sml",
+        "scopeName": "source.ml",
+        "path": "./syntaxes/sml.tmLanguage.json"
+      },
+      {
+        "language": "usmalltalk",
+        "scopeName": "source.clojure",
+        "path": "./syntaxes/clojure.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "cs105-icons",
+        "label": "CS105 File Icons",
+        "path": "./file-icons/cs105-icon-theme.json"
       }
     ]
   },
+  "main": "./out/extension.js",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
