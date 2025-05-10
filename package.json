@@ -10,17 +10,14 @@
     "Programming Languages",
     "Themes"
   ],
-  "extensionDependencies": [
-    "liamstrand.105-vscode",
-    "tinyjiahao.vscode-scheme",
-    "freebroccolo.sml"
+  "activationEvents": [
+    "onLanguage"
   ],
-  "activationEvents": [],
   "contributes": {
     "languages": [
       {
         "id": "impcore",
-        "aliases": ["Impcore"],
+        "aliases": ["Impcore", "impcore"],
         "extensions": [".imp", ".timp"],
         "configuration": "./language-configuration/impcore.json"
       },
@@ -65,6 +62,7 @@
         "path": "./syntaxes/clojure.tmLanguage.json"
       }
     ],
+    "commands": [],
     "iconThemes": [
       {
         "id": "cs105-icons",
