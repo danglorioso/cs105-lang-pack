@@ -20,56 +20,59 @@
         "aliases": ["Impcore", "impcore"],
         "extensions": [".imp", ".timp"],
         "configuration": "./language-configuration/impcore.json"
-      },
-      {
-        "id": "scheme",
-        "aliases": ["Scheme"],
-        "extensions": [".scm"],
-        "configuration": "./language-configuration/scheme.json"
-      },
-      {
-        "id": "sml",
-        "aliases": ["Standard ML"],
-        "extensions": [".sml", ".nml"],
-        "configuration": "./language-configuration/sml.json"
-      },
-      {
-        "id": "usmalltalk",
-        "aliases": ["μSmalltalk"],
-        "extensions": [".smt"],
-        "configuration": "./language-configuration/smalltalk.json"
       }
+      // ,
+      // {
+      //   "id": "scheme",
+      //   "aliases": ["Scheme"],
+      //   "extensions": [".scm"],
+      //   "configuration": "./language-configuration/scheme.json"
+      // },
+      // {
+      //   "id": "sml",
+      //   "aliases": ["Standard ML"],
+      //   "extensions": [".sml", ".nml"],
+      //   "configuration": "./language-configuration/sml.json"
+      // },
+      // {
+      //   "id": "usmalltalk",
+      //   "aliases": ["μSmalltalk"],
+      //   "extensions": [".smt"],
+      //   "configuration": "./language-configuration/smalltalk.json"
+      // }
     ],
     "grammars": [
       {
         "language": "impcore",
         "scopeName": "source.impcore",
         "path": "./syntaxes/impcore.tmLanguage.json"
-      },
-      {
-        "language": "scheme",
-        "scopeName": "source.scheme",
-        "path": "./syntaxes/scheme.tmLanguage.json"
-      },
-      {
-        "language": "sml",
-        "scopeName": "source.ml",
-        "path": "./syntaxes/sml.tmLanguage.json"
-      },
-      {
-        "language": "usmalltalk",
-        "scopeName": "source.clojure",
-        "path": "./syntaxes/clojure.tmLanguage.json"
       }
+      // ,
+      // {
+      //   "language": "scheme",
+      //   "scopeName": "source.scheme",
+      //   "path": "./syntaxes/scheme.tmLanguage.json"
+      // },
+      // {
+      //   "language": "sml",
+      //   "scopeName": "source.ml",
+      //   "path": "./syntaxes/sml.tmLanguage.json"
+      // },
+      // {
+      //   "language": "usmalltalk",
+      //   "scopeName": "source.clojure",
+      //   "path": "./syntaxes/clojure.tmLanguage.json"
+      // }
     ],
-    "commands": [],
-    "iconThemes": [
-      {
-        "id": "cs105-icons",
-        "label": "CS105 File Icons",
-        "path": "./file-icons/cs105-icon-theme.json"
-      }
-    ]
+    "commands": []
+    // ,
+    // "iconThemes": [
+    //   {
+    //     "id": "cs105-icons",
+    //     "label": "CS105 File Icons",
+    //     "path": "./file-icons/cs105-icon-theme.json"
+    //   }
+    // ]
   },
   "main": "./out/extension.js",
   "scripts": {
