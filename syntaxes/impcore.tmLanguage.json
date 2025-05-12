@@ -2,9 +2,10 @@
 // This grammar file for Impcore was adapted from the original extension
 // created by Liam Strand: https://github.com/liam-strand/105-vscode
 // Credit and thanks to Liam for developing the initial syntax highlighting support.
+// Modifications in this version are for inclusion in the Tufts CS105 Language Pack.
 
 {
-    "scopeName": "source.imp",
+    "scopeName": "source.impcore",
     "patterns": [
         {"include": "#comment"},
         {"include": "#keywords"},
@@ -14,31 +15,31 @@
     ],
     "repository": {
         "comment": {
-            "name": "comment.line.semi-colon.imp",
+            "name": "comment.line.semi-colon.impcore",
             "match": ";.*$"
         },
         "keywords": {
             "match": "\\((check-expect|check-assert|check-error|val|define|use|set|if|while|begin)\\s",
             "captures": {
-                "1": { "name": "keyword.imp" }
+                "1": { "name": "keyword.impcore" }
             }
         },
         "literals": {
             "match": "([+-]?\\d+)",
             "captures": {
-                "1": { "name": "constant.numeral.imp" }
+                "1": { "name": "constant.numeral.impcore" }
             }
         },
         "primitive-functions": {
             "match": "\\((\\+|-|\\*|\\/|=|<|>|println|print|printu)\\s",
             "captures": {
-                "1": { "name": "support.function.imp" }
+                "1": { "name": "support.function.impcore" }
             }
         },
         "predefined-functions": {
             "match": "\\((and|or|not|<=|>=|!=|mod|negated)\\s",
             "captures": {
-                "1": { "name": "support.function.imp" }
+                "1": { "name": "support.function.impcorecore" }
             }
         }
     }
